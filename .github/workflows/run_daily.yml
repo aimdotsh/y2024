@@ -12,12 +12,6 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: My GitHub Status
-        uses: aimdotsh/github-readme-stats@main
-        with:
-          TELEGRAM_TOKEN: ${{ secrets.TELE_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELE_CHAT_ID }}
 
       - name: Set up Python
         uses: actions/setup-python@v1
