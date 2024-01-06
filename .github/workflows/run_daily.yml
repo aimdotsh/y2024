@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 env:
-  GITHUB_NAME: yihong0618
-  GITHUB_EMAIL: zouzou0208@gmail.com
+  GITHUB_NAME: aimdotsh
+  GITHUB_EMAIL: liups@liups.com
 
 jobs:
   build:
@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: My GitHub Status
-        uses: yihong0618/github-readme-stats@main
+        uses: aimdotsh/github-readme-stats@main
         with:
           TELEGRAM_TOKEN: ${{ secrets.TELE_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELE_CHAT_ID }}
@@ -47,7 +47,7 @@ jobs:
         uses: github-actions-x/commit@v2.6
         with:
           github-token: ${{ secrets.G_T }}
-          commit-message: "Refresh README (2021 NUM Daily)"
+          commit-message: "Refresh README (2024 NUM Daily)"
           files: README.md
           rebase: "true"
           name: ${{ env.GITHUB_NAME }}
